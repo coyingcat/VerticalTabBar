@@ -29,7 +29,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             controls[1].view.backgroundColor = UIColor.red
             controls[2].view.backgroundColor = UIColor.green
             controls[3].view.backgroundColor = UIColor.purple
-            return controls
+            let shadows: [UIViewController] = Array(0...2).map{
+                let ctrl = UIViewController()
+                ctrl.view.backgroundColor = UIColor.white
+                let title = "shadow \($0 + 1)"
+                ctrl.tabBarItem = UITabBarItem(title: title, image: UIImage(named:"magnifying-glass"), tag: $0 + 4)
+                return ctrl
+            }
+            return controls + shadows
         }()
         
         window = UIWindow(frame: UIScreen.main.bounds)

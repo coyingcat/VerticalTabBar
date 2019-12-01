@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2605CBA52393B9710064519C /* RecentScoreBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBA02393B9710064519C /* RecentScoreBg.swift */; };
+		2605CBA72393B9710064519C /* DecorationLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBA32393B9710064519C /* DecorationLayoutAttributes.swift */; };
+		2605CBA82393B9710064519C /* DecorationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBA42393B9710064519C /* DecorationFlow.swift */; };
+		2605CBAB2393B9D70064519C /* UV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBAA2393B9D70064519C /* UV.swift */; };
+		2605CBAD2393BA670064519C /* Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBAC2393BA670064519C /* Reuse.swift */; };
+		2605CBAF2393BAB50064519C /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBAE2393BAB50064519C /* Layout.swift */; };
 		265DAF4823119CE700D6EEE1 /* TabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DAF4623119CE700D6EEE1 /* TabBarCell.swift */; };
 		26EF83D8231207B40058BF68 /* VerticalTabTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D7231207B40058BF68 /* VerticalTabTable.swift */; };
 		26EF83DA23123AA40058BF68 /* VerticalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */; };
@@ -37,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2605CBA02393B9710064519C /* RecentScoreBg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentScoreBg.swift; sourceTree = "<group>"; };
+		2605CBA32393B9710064519C /* DecorationLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecorationLayoutAttributes.swift; sourceTree = "<group>"; };
+		2605CBA42393B9710064519C /* DecorationFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecorationFlow.swift; sourceTree = "<group>"; };
+		2605CBAA2393B9D70064519C /* UV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UV.swift; sourceTree = "<group>"; };
+		2605CBAC2393BA670064519C /* Reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuse.swift; sourceTree = "<group>"; };
+		2605CBAE2393BAB50064519C /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		265DAF4623119CE700D6EEE1 /* TabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCell.swift; sourceTree = "<group>"; };
 		26EF83D7231207B40058BF68 /* VerticalTabTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabTable.swift; sourceTree = "<group>"; };
 		26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabBarController.swift; sourceTree = "<group>"; };
@@ -80,6 +92,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2605CB9E2393B8E60064519C /* DecorationAndShadow */ = {
+			isa = PBXGroup;
+			children = (
+				2605CBA92393B9A50064519C /* Util */,
+				2605CBA22393B9710064519C /* Layout */,
+				2605CB9F2393B9710064519C /* Shadow */,
+			);
+			path = DecorationAndShadow;
+			sourceTree = "<group>";
+		};
+		2605CB9F2393B9710064519C /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				2605CBA02393B9710064519C /* RecentScoreBg.swift */,
+			);
+			path = Shadow;
+			sourceTree = "<group>";
+		};
+		2605CBA22393B9710064519C /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				2605CBA32393B9710064519C /* DecorationLayoutAttributes.swift */,
+				2605CBA42393B9710064519C /* DecorationFlow.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		2605CBA92393B9A50064519C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2605CBAA2393B9D70064519C /* UV.swift */,
+				2605CBAC2393BA670064519C /* Reuse.swift */,
+				2605CBAE2393BAB50064519C /* Layout.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		265DAF4523119CC200D6EEE1 /* VerticalTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,13 +170,14 @@
 		26F167A1231067B000437776 /* VerticalTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				26EF83DB231245750058BF68 /* example */,
-				265DAF4523119CC200D6EEE1 /* VerticalTabBar */,
 				26F167A2231067B000437776 /* AppDelegate.swift */,
-				26F167A6231067B000437776 /* Main.storyboard */,
 				26F167A9231067B200437776 /* Assets.xcassets */,
-				26F167AB231067B200437776 /* LaunchScreen.storyboard */,
+				2605CB9E2393B8E60064519C /* DecorationAndShadow */,
+				26EF83DB231245750058BF68 /* example */,
 				26F167AE231067B200437776 /* Info.plist */,
+				26F167AB231067B200437776 /* LaunchScreen.storyboard */,
+				26F167A6231067B000437776 /* Main.storyboard */,
+				265DAF4523119CC200D6EEE1 /* VerticalTabBar */,
 			);
 			path = VerticalTabBar;
 			sourceTree = "<group>";
@@ -281,8 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2605CBA72393B9710064519C /* DecorationLayoutAttributes.swift in Sources */,
 				26EF83DD231245880058BF68 /* ViewController.swift in Sources */,
+				2605CBAD2393BA670064519C /* Reuse.swift in Sources */,
+				2605CBAB2393B9D70064519C /* UV.swift in Sources */,
 				265DAF4823119CE700D6EEE1 /* TabBarCell.swift in Sources */,
+				2605CBA82393B9710064519C /* DecorationFlow.swift in Sources */,
+				2605CBA52393B9710064519C /* RecentScoreBg.swift in Sources */,
+				2605CBAF2393BAB50064519C /* Layout.swift in Sources */,
 				26EF83D8231207B40058BF68 /* VerticalTabTable.swift in Sources */,
 				26F167A3231067B000437776 /* AppDelegate.swift in Sources */,
 				26EF83DA23123AA40058BF68 /* VerticalTabBarController.swift in Sources */,
@@ -470,7 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.photod.mnc.VerticalTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -488,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.photod.mnc.VerticalTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
