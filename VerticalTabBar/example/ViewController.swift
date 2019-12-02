@@ -26,7 +26,8 @@ class ViewController: VerticalTabBarController {
 extension ViewController: TabBarControllerDelegate{
     
     func tabBarController(_ tabBarController: VerticalTabBarController, shouldSelect viewController: UIViewController) -> Bool{
-        if let index = viewControllers.firstIndex(of: viewController), index == 3{
+        let indexNotSelected = 4
+        if let index = viewControllers.firstIndex(of: viewController), index == indexNotSelected{
             return false
         }
         return true

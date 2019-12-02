@@ -23,9 +23,6 @@ class ShadowBgSecond: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor.clear
-        // 不给背景色，默认黑色
-        
-        // 除非，在 drawRect ,先刷一层底色
     }
     
     
@@ -51,11 +48,7 @@ class ShadowBgSecond: UICollectionReusableView {
             midArc.addArc(withCenter: midP.offset(ShadowFrame.corn, offsetV: ShadowFrame.corn), radius: ShadowFrame.corn, startAngle: CGFloat.pi , endAngle: CGFloat.pi * 1.5, clockwise: true)
             midArc.close()
             rect.append(midArc)
-            /*
-            UIColor.red.setStroke()
-            midArc.stroke()
-            // rect.stroke()
-            */
+
         }
         else{
             rect = UIBezierPath(roundedRect: frame, cornerRadius: ShadowFrame.corn)

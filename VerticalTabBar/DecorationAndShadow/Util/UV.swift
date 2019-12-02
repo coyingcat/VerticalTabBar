@@ -13,6 +13,7 @@ import UIKit
 extension UIColor{
 
    static let shadowScore = UIColor(rgb: 0xCDCDCD, alpha: 0.5)
+   static let shadowCompare = UIColor(rgb: 0x3B5998, alpha: 0.5)
 }
 
 

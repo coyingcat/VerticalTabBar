@@ -25,7 +25,7 @@ struct MyLibCtrlLayout {
 class DecorationController: TabController {
     
     lazy var contentCollcection: UICollectionView = {
-        let layout = DecorationFlow()
+        let layout = DecorationFlow<ShadowBg>()
         let collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collection.backgroundColor = UIColor(rgb: 0xF9F8F8)
         collection.delegate = self

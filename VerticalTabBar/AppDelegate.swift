@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,30 +21,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let controllers = { () -> [UIViewController] in
-            var controls = [UIViewController]()
-            for i in 0..<4{
-                let controller = UIViewController()
-                let title = "tab \(i+1)"
-                controller.tabBarItem = UITabBarItem(title: title, image: UIImage(named:"magnifying-glass"), tag: i)
-                controls.append(controller)
-            }
-            controls[0].view.backgroundColor = UIColor.blue
-            controls[1].view.backgroundColor = UIColor.red
-            controls[2].view.backgroundColor = UIColor.green
-            controls[3].view.backgroundColor = UIColor.purple
-            let shadows: [UIViewController] = Array(0...2).map{
+            let controller = UIViewController()
+            let title = "点不了"
+            controller.tabBarItem = UITabBarItem(title: title, image: UIImage(named:"magnifying-glass"), tag: 0)
+            controller.view.backgroundColor = UIColor.blue
+            let shadows: [UIViewController] = Array(0...3).map{
                 let decorate = DecorationController()
-                var title = "tbd"
-                if $0 == 0{
+                let title: String
+                switch $0{
+                case 0:
+                    title = "阴影效果"
+                case 1:
+                    title = "阴影效果 cg"
+                    decorate.secondInfo = (DecorationFlow<ShadowBgCg>(), title)
+                case 2:
                     title = "阴影效果二"
                     decorate.secondInfo = (DecorationFlowSecond(), title)
+                case 3:
+                    title = "图片"
+                    decorate.secondInfo = (DecorationFlowSecond(), title)
+                default:
+                    title = "tbd"
                 }
                 let ctrl = UINavigationController(rootViewController: decorate)
                 ctrl.view.backgroundColor = UIColor.white
-                ctrl.tabBarItem = UITabBarItem(title: title, image: UIImage(named:"magnifying-glass"), tag: $0 + 4)
+                ctrl.tabBarItem = UITabBarItem(title: title, image: UIImage(named:"magnifying-glass"), tag: $0 + 1)
                 return ctrl
             }
-            return shadows + controls
+            return shadows + [controller]
         }()
         
         window = UIWindow(frame: UIScreen.main.bounds)
