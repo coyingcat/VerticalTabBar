@@ -1,5 +1,5 @@
 //
-//  RecentScoreBg.swift
+//  ShadowBg.swift
 //  musicSheet
 //
 //  Created by Jz D on 2019/11/29.
@@ -15,7 +15,7 @@ struct ShadowFrame {
 }
 
 
-class RecentScoreBg: UICollectionReusableView {
+class ShadowBg: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor.clear

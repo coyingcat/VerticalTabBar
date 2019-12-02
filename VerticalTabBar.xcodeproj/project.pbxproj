@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2605CBA52393B9710064519C /* RecentScoreBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBA02393B9710064519C /* RecentScoreBg.swift */; };
+		2605CBA52393B9710064519C /* ShadowBg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBA02393B9710064519C /* ShadowBg.swift */; };
 		2605CBA72393B9710064519C /* DecorationLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBA32393B9710064519C /* DecorationLayoutAttributes.swift */; };
 		2605CBA82393B9710064519C /* DecorationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBA42393B9710064519C /* DecorationFlow.swift */; };
 		2605CBAB2393B9D70064519C /* UV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBAA2393B9D70064519C /* UV.swift */; };
@@ -25,6 +25,7 @@
 		26A6091B23949DC800F35986 /* Practice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A6091A23949DC800F35986 /* Practice.swift */; };
 		26A6091D2394B07A00F35986 /* DecorationFlowSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A6091C2394B07A00F35986 /* DecorationFlowSecond.swift */; };
 		26A609202394B3B000F35986 /* DebugLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A6091F2394B3B000F35986 /* DebugLayer.swift */; };
+		26A609222394B52B00F35986 /* ShadowBgSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A609212394B52B00F35986 /* ShadowBgSecond.swift */; };
 		26EF83D8231207B40058BF68 /* VerticalTabTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D7231207B40058BF68 /* VerticalTabTable.swift */; };
 		26EF83DA23123AA40058BF68 /* VerticalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */; };
 		26EF83DD231245880058BF68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83DC231245880058BF68 /* ViewController.swift */; };
@@ -54,7 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2605CBA02393B9710064519C /* RecentScoreBg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentScoreBg.swift; sourceTree = "<group>"; };
+		2605CBA02393B9710064519C /* ShadowBg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowBg.swift; sourceTree = "<group>"; };
 		2605CBA32393B9710064519C /* DecorationLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecorationLayoutAttributes.swift; sourceTree = "<group>"; };
 		2605CBA42393B9710064519C /* DecorationFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecorationFlow.swift; sourceTree = "<group>"; };
 		2605CBAA2393B9D70064519C /* UV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UV.swift; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		26A6091A23949DC800F35986 /* Practice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice.swift; sourceTree = "<group>"; };
 		26A6091C2394B07A00F35986 /* DecorationFlowSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecorationFlowSecond.swift; sourceTree = "<group>"; };
 		26A6091F2394B3B000F35986 /* DebugLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugLayer.swift; sourceTree = "<group>"; };
+		26A609212394B52B00F35986 /* ShadowBgSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowBgSecond.swift; sourceTree = "<group>"; };
 		26EF83D7231207B40058BF68 /* VerticalTabTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabTable.swift; sourceTree = "<group>"; };
 		26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabBarController.swift; sourceTree = "<group>"; };
 		26EF83DC231245880058BF68 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +135,8 @@
 		2605CB9F2393B9710064519C /* Shadow */ = {
 			isa = PBXGroup;
 			children = (
-				2605CBA02393B9710064519C /* RecentScoreBg.swift */,
+				2605CBA02393B9710064519C /* ShadowBg.swift */,
+				26A609212394B52B00F35986 /* ShadowBgSecond.swift */,
 			);
 			path = Shadow;
 			sourceTree = "<group>";
@@ -419,7 +422,8 @@
 				2605CBB12393EED90064519C /* DecorationController.swift in Sources */,
 				2605CBA82393B9710064519C /* DecorationFlow.swift in Sources */,
 				26A6091B23949DC800F35986 /* Practice.swift in Sources */,
-				2605CBA52393B9710064519C /* RecentScoreBg.swift in Sources */,
+				2605CBA52393B9710064519C /* ShadowBg.swift in Sources */,
+				26A609222394B52B00F35986 /* ShadowBgSecond.swift in Sources */,
 				2605CBC62393F2D10064519C /* TabController.swift in Sources */,
 				2605CBAF2393BAB50064519C /* Layout.swift in Sources */,
 				2605CBC92393F3F50064519C /* ViewAdd.swift in Sources */,

@@ -23,9 +23,6 @@ class DecorationController: TabController {
     
     lazy var contentCollcection: UICollectionView = {
         let layout = DecorationFlow()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: MyLibCtrlLayout.x, bottom: 16, right: MyLibCtrlLayout.trailing)
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = 0
         let collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collection.backgroundColor = UIColor(rgb: 0xF9F8F8)
         collection.delegate = self
@@ -133,7 +130,7 @@ extension DecorationController: UICollectionViewDataSource{
         let cell = collectionView.dequeue(cell: PracticeRecentlyItem.self, ip: indexPath)
         let record = Info.data[indexPath.item]
         cell.config(record.scores_name, description: record.desp)
-        cell.layer.debug()
+     //   cell.layer.debug()
         return cell
     }
     

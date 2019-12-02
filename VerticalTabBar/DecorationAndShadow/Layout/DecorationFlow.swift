@@ -23,7 +23,10 @@ class DecorationFlow: UICollectionViewFlowLayout {
     
     override func prepare() {
         super.prepare()
-        register(RecentScoreBg.self, forDecorationViewOfKind: RecentScoreBg.id)
+        sectionInset = UIEdgeInsets(top: 0, left: MyLibCtrlLayout.x, bottom: 16, right: MyLibCtrlLayout.trailing)
+        minimumLineSpacing = 0
+        minimumInteritemSpacing = 0
+        register(ShadowBg.self, forDecorationViewOfKind: ShadowBg.id)
     }
     
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
@@ -31,10 +34,10 @@ class DecorationFlow: UICollectionViewFlowLayout {
     }
     
     override func layoutAttributesForDecorationView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        guard indexPath.section == 0, let collection = collectionView, elementKind == RecentScoreBg.id else{
+        guard indexPath.section == 0, let collection = collectionView, elementKind == ShadowBg.id else{
             return nil
         }
-        let attributes = DecorationLayoutAttributes(forDecorationViewOfKind: RecentScoreBg.id, with: indexPath)
+        let attributes = DecorationLayoutAttributes(forDecorationViewOfKind: ShadowBg.id, with: indexPath)
         let totalWid = UI.width - VerticalTabBarInfo.tabBarWidth
         let width = totalWid - FrontPageFrame.lhs - FrontPageFrame.rhs + ShadowFrame.rhs
         let floor = ceil(Double(collection.numberOfItems(inSection: 0))/2.0)
@@ -50,7 +53,7 @@ class DecorationFlow: UICollectionViewFlowLayout {
         guard let collection = collectionView, collection.numberOfSections > 0 else{
             return array
         }
-        let decorations = layoutAttributesForDecorationView(ofKind: RecentScoreBg.id, at: IndexPath(item: 0, section: 0))
+        let decorations = layoutAttributesForDecorationView(ofKind: ShadowBg.id, at: IndexPath(item: 0, section: 0))
         if let decorate = decorations, rect.intersects(decorate.frame){
             array?.append(decorate)
         }

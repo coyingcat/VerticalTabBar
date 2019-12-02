@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let shadows: [UIViewController] = Array(0...2).map{
                 let decorate = DecorationController()
                 var title = "tbd"
-                if $0 == 1{
+                if $0 == 0{
                     title = "阴影效果二"
                     decorate.secondInfo = (DecorationFlowSecond(), title)
                 }
