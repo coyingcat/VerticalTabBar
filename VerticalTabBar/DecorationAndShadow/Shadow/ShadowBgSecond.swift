@@ -41,9 +41,21 @@ class ShadowBgSecond: UICollectionReusableView {
         let rect: UIBezierPath
         if isOdd{
             let upFrame = frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: MyLibCtrlLayout.itemHeight, right: 0))
-            rect = UIBezierPath(roundedRect: upFrame, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: ShadowFrame.corn, height: ShadowFrame.corn))
+            rect = UIBezierPath(roundedRect: upFrame, byRoundingCorners: [.topLeft, .topRight, .bottomRight], cornerRadii: CGSize(width: ShadowFrame.corn, height: ShadowFrame.corn))
             let downFrame = CGRect(origin: CGPoint(x: upFrame.minX, y: upFrame.maxY), size: CGSize(width: MyLibCtrlLayout.doubleItemWidth * 0.5, height: MyLibCtrlLayout.itemHeight))
             rect.append(UIBezierPath(roundedRect: downFrame, byRoundingCorners: [.bottomLeft, .bottomRight], cornerRadii: CGSize(width: ShadowFrame.corn, height: ShadowFrame.corn)))
+            let midArc = UIBezierPath()
+            let midP = CGPoint(x: upFrame.midX, y: upFrame.maxY)
+            midArc.move(to: midP)
+            midArc.addLine(to: midP.v(ShadowFrame.corn))
+            midArc.addArc(withCenter: midP.offset(ShadowFrame.corn, offsetV: ShadowFrame.corn), radius: ShadowFrame.corn, startAngle: CGFloat.pi , endAngle: CGFloat.pi * 1.5, clockwise: true)
+            midArc.close()
+            rect.append(midArc)
+            /*
+            UIColor.red.setStroke()
+            midArc.stroke()
+            // rect.stroke()
+            */
         }
         else{
             rect = UIBezierPath(roundedRect: frame, cornerRadius: ShadowFrame.corn)

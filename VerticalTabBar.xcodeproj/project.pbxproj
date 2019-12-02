@@ -27,6 +27,7 @@
 		26A609202394B3B000F35986 /* DebugLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A6091F2394B3B000F35986 /* DebugLayer.swift */; };
 		26A609222394B52B00F35986 /* ShadowBgSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A609212394B52B00F35986 /* ShadowBgSecond.swift */; };
 		26A609242394BA0900F35986 /* Num.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A609232394BA0900F35986 /* Num.swift */; };
+		26A609262394BFA400F35986 /* PointAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A609252394BFA400F35986 /* PointAdd.swift */; };
 		26EF83D8231207B40058BF68 /* VerticalTabTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D7231207B40058BF68 /* VerticalTabTable.swift */; };
 		26EF83DA23123AA40058BF68 /* VerticalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */; };
 		26EF83DD231245880058BF68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83DC231245880058BF68 /* ViewController.swift */; };
@@ -76,6 +77,7 @@
 		26A6091F2394B3B000F35986 /* DebugLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugLayer.swift; sourceTree = "<group>"; };
 		26A609212394B52B00F35986 /* ShadowBgSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowBgSecond.swift; sourceTree = "<group>"; };
 		26A609232394BA0900F35986 /* Num.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Num.swift; sourceTree = "<group>"; };
+		26A609252394BFA400F35986 /* PointAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointAdd.swift; sourceTree = "<group>"; };
 		26EF83D7231207B40058BF68 /* VerticalTabTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabTable.swift; sourceTree = "<group>"; };
 		26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabBarController.swift; sourceTree = "<group>"; };
 		26EF83DC231245880058BF68 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				2605CBAE2393BAB50064519C /* Layout.swift */,
 				2605CBC82393F3F50064519C /* ViewAdd.swift */,
 				26A609232394BA0900F35986 /* Num.swift */,
+				26A609252394BFA400F35986 /* PointAdd.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				2605CBA82393B9710064519C /* DecorationFlow.swift in Sources */,
 				26A6091B23949DC800F35986 /* Practice.swift in Sources */,
 				2605CBA52393B9710064519C /* ShadowBg.swift in Sources */,
+				26A609262394BFA400F35986 /* PointAdd.swift in Sources */,
 				26A609222394B52B00F35986 /* ShadowBgSecond.swift in Sources */,
 				2605CBC62393F2D10064519C /* TabController.swift in Sources */,
 				2605CBAF2393BAB50064519C /* Layout.swift in Sources */,
