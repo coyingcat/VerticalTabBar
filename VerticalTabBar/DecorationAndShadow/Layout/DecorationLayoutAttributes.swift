@@ -10,10 +10,6 @@ import UIKit
 
 class DecorationLayoutAttributes: UICollectionViewLayoutAttributes {
 
-    
-    
-    
-    
-    
+    var isOdd = false
     
 }

@@ -28,10 +28,11 @@ class DecorationFlowSecond: UICollectionViewFlowLayout {
             return nil
         }
         let attributes = DecorationLayoutAttributes(forDecorationViewOfKind: ShadowBgSecond.id, with: indexPath)
-        let totalWid = UI.width - VerticalTabBarInfo.tabBarWidth
-        let width = totalWid - FrontPageFrame.lhs - FrontPageFrame.rhs + ShadowFrame.rhs
-        let floor = ceil(Double(collection.numberOfItems(inSection: 0))/2.0)
-        let height = CGFloat(floor) * FrontPageFrame.sectionHeaderH + ShadowFrame.bottom
+        let width = MyLibCtrlLayout.doubleItemWidth + ShadowFrame.rhs
+        let count = collection.numberOfItems(inSection: 0)
+        attributes.isOdd = count.isOdd
+        let floor = ceil(Double(count)/2.0)
+        let height = CGFloat(floor) * FrontPageFrame.itemHeight + ShadowFrame.bottom
         attributes.frame = CGRect(x: FrontPageFrame.lhs, y: FrontPageFrame.headerH, width: width, height: height)
         attributes.zIndex -= 1
         return attributes

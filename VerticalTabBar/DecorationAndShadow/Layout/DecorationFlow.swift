@@ -13,7 +13,7 @@ struct FrontPageFrame {
     static let lhs: CGFloat = 20
     static let rhs: CGFloat = 20
     static let headerH: CGFloat = 54
-    static let sectionHeaderH: CGFloat = 72
+    static let itemHeight: CGFloat = 72
 }
 
 
@@ -41,7 +41,7 @@ class DecorationFlow: UICollectionViewFlowLayout {
         let totalWid = UI.width - VerticalTabBarInfo.tabBarWidth
         let width = totalWid - FrontPageFrame.lhs - FrontPageFrame.rhs + ShadowFrame.rhs
         let floor = ceil(Double(collection.numberOfItems(inSection: 0))/2.0)
-        let height = CGFloat(floor) * FrontPageFrame.sectionHeaderH + ShadowFrame.bottom
+        let height = CGFloat(floor) * FrontPageFrame.itemHeight + ShadowFrame.bottom
         attributes.frame = CGRect(x: FrontPageFrame.lhs, y: FrontPageFrame.headerH, width: width, height: height)
         attributes.zIndex -= 1
         return attributes

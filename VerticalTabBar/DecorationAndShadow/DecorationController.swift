@@ -14,7 +14,10 @@ struct MyLibCtrlLayout {
     static let x: CGFloat = 20
     static let trailing: CGFloat = 20
     static let headerH: CGFloat = 54
-    static let sectionHeaderH: CGFloat = 72
+    static let itemHeight: CGFloat = 72
+    
+    
+    static let doubleItemWidth = UI.width - VerticalTabBarInfo.tabBarWidth - FrontPageFrame.lhs - FrontPageFrame.rhs
 }
 
 
@@ -72,8 +75,7 @@ extension DecorationController: UICollectionViewDelegateFlowLayout{
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UI.width - VerticalTabBarInfo.tabBarWidth - FrontPageFrame.lhs - FrontPageFrame.rhs
-        let size = CGSize(width: width * 0.5, height: MyLibCtrlLayout.sectionHeaderH)
+        let size = CGSize(width: MyLibCtrlLayout.doubleItemWidth * 0.5, height: MyLibCtrlLayout.itemHeight)
        
         return size
     }
@@ -119,9 +121,9 @@ extension DecorationController: UICollectionViewDataSource{
     
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let count = 5
+        var count = 5
             // debug
-         //   count = 3
+        count = 4
             
         return count
     }
