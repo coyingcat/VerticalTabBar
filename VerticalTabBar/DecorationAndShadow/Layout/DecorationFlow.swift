@@ -8,16 +8,12 @@
 
 import UIKit
 
-struct TabBarFrame{
-    static let width: CGFloat = 80
-    
-}
 
 struct FrontPageFrame {
-    static let x: CGFloat = 20
-    static let trailing: CGFloat = 24
+    static let lhs: CGFloat = 20
+    static let rhs: CGFloat = 24
     static let headerH: CGFloat = 54
-    static let sectionTopItemH: CGFloat = 72
+    static let sectionHeaderH: CGFloat = 72
 }
 
 
@@ -40,11 +36,11 @@ class DecorationFlow: UICollectionViewFlowLayout {
             return nil
         }
         let attributes = DecorationLayoutAttributes(forDecorationViewOfKind: RecentScoreBg.id, with: indexPath)
-        let totalWid = UI.width - TabBarFrame.width
-        let width = totalWid - FrontPageFrame.x - FrontPageFrame.trailing + ShadowFrame.cornerTrailing
+        let totalWid = UI.width - VerticalTabBarInfo.tabBarWidth
+        let width = totalWid - FrontPageFrame.lhs - FrontPageFrame.rhs + ShadowFrame.cornerTrailing
         let floor = ceil(Double(collection.numberOfItems(inSection: 0))/2.0)
-        let height = CGFloat(floor) * FrontPageFrame.sectionTopItemH + ShadowFrame.shadowOffset
-        attributes.frame = CGRect(x: FrontPageFrame.x, y: FrontPageFrame.headerH, width: width, height: height)
+        let height = CGFloat(floor) * FrontPageFrame.sectionHeaderH + ShadowFrame.shadowOffset
+        attributes.frame = CGRect(x: FrontPageFrame.lhs, y: FrontPageFrame.headerH, width: width, height: height)
         attributes.zIndex -= 1
         return attributes
         

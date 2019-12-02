@@ -10,10 +10,6 @@ import UIKit
 
 class TabBarCell: UITableViewCell {
     
-    static var id: String{
-        return String(describing: self)
-    }
-
     open var selectedImageTintColor = UIColor(red: 41.0/255.0, green: 147.0/255.0, blue: 239.0/255.0, alpha: 1.0){
         didSet{
             setNeedsDisplay()

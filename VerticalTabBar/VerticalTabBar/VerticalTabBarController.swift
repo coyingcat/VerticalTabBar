@@ -19,12 +19,18 @@ import UIKit
 
 
 
+struct VerticalTabBarInfo {
+    static let tabBarWidth: CGFloat = 100
+}
+
+
+
 class VerticalTabBarController: UIViewController {
     
     var delegate: TabBarControllerDelegate?
     let tabBar = VerticalTabTable(frame: CGRect(x: 0, y: 0, width: 100, height: UIScreen.main.bounds.height))
     
-    var tabBarWidth: CGFloat = 100
+    var tabBarWidth: CGFloat = VerticalTabBarInfo.tabBarWidth
     
     
     var selectedViewController: UIViewController{
@@ -114,4 +120,26 @@ extension VerticalTabBarController: UITableViewDelegate{
             return tableView.indexPathForSelectedRow
         }
     }
+}
+
+
+
+extension VerticalTabBarController{
+    
+    func adjustLayout(_ showTab: Bool = true){
+        if showTab{
+            tabBar.frame = CGRect(x: 0, y: 0, width: VerticalTabBarInfo.tabBarWidth, height: UI.height)
+            selectedViewController.view.frame = CGRect(x: VerticalTabBarInfo.tabBarWidth, y: 0, width: view.width - VerticalTabBarInfo.tabBarWidth, height: view.height)
+        }
+        else{
+            tabBar.frame = CGRect.zero
+            selectedViewController.view.frame = view.bounds
+        }
+    }
+}
+
+
+
+struct VerticalTabBarData{
+    static let offset: CGFloat = 4
 }

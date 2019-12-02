@@ -13,7 +13,16 @@
 		2605CBAB2393B9D70064519C /* UV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBAA2393B9D70064519C /* UV.swift */; };
 		2605CBAD2393BA670064519C /* Reuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBAC2393BA670064519C /* Reuse.swift */; };
 		2605CBAF2393BAB50064519C /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBAE2393BAB50064519C /* Layout.swift */; };
+		2605CBB12393EED90064519C /* DecorationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBB02393EED90064519C /* DecorationController.swift */; };
+		2605CBBB2393EF5B0064519C /* ScoreReusableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBB32393EF5B0064519C /* ScoreReusableHeader.swift */; };
+		2605CBBD2393EF5B0064519C /* ScoreReusableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2605CBB52393EF5B0064519C /* ScoreReusableHeader.xib */; };
+		2605CBC02393EF5B0064519C /* PracticeRecentlyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBB82393EF5B0064519C /* PracticeRecentlyItem.swift */; };
+		2605CBC12393EF5B0064519C /* PracticeRecentlyItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2605CBB92393EF5B0064519C /* PracticeRecentlyItem.xib */; };
+		2605CBC62393F2D10064519C /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBC42393F2D10064519C /* TabController.swift */; };
+		2605CBC92393F3F50064519C /* ViewAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2605CBC82393F3F50064519C /* ViewAdd.swift */; };
+		2605CBCC2393F92C0064519C /* one.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2605CBCB2393F92C0064519C /* one.plist */; };
 		265DAF4823119CE700D6EEE1 /* TabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DAF4623119CE700D6EEE1 /* TabBarCell.swift */; };
+		26A6091B23949DC800F35986 /* Practice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A6091A23949DC800F35986 /* Practice.swift */; };
 		26EF83D8231207B40058BF68 /* VerticalTabTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D7231207B40058BF68 /* VerticalTabTable.swift */; };
 		26EF83DA23123AA40058BF68 /* VerticalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */; };
 		26EF83DD231245880058BF68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83DC231245880058BF68 /* ViewController.swift */; };
@@ -49,7 +58,16 @@
 		2605CBAA2393B9D70064519C /* UV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UV.swift; sourceTree = "<group>"; };
 		2605CBAC2393BA670064519C /* Reuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reuse.swift; sourceTree = "<group>"; };
 		2605CBAE2393BAB50064519C /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		2605CBB02393EED90064519C /* DecorationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecorationController.swift; sourceTree = "<group>"; };
+		2605CBB32393EF5B0064519C /* ScoreReusableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreReusableHeader.swift; sourceTree = "<group>"; };
+		2605CBB52393EF5B0064519C /* ScoreReusableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoreReusableHeader.xib; sourceTree = "<group>"; };
+		2605CBB82393EF5B0064519C /* PracticeRecentlyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeRecentlyItem.swift; sourceTree = "<group>"; };
+		2605CBB92393EF5B0064519C /* PracticeRecentlyItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PracticeRecentlyItem.xib; sourceTree = "<group>"; };
+		2605CBC42393F2D10064519C /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		2605CBC82393F3F50064519C /* ViewAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAdd.swift; sourceTree = "<group>"; };
+		2605CBCB2393F92C0064519C /* one.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = one.plist; sourceTree = "<group>"; };
 		265DAF4623119CE700D6EEE1 /* TabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCell.swift; sourceTree = "<group>"; };
+		26A6091A23949DC800F35986 /* Practice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice.swift; sourceTree = "<group>"; };
 		26EF83D7231207B40058BF68 /* VerticalTabTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabTable.swift; sourceTree = "<group>"; };
 		26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabBarController.swift; sourceTree = "<group>"; };
 		26EF83DC231245880058BF68 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +113,11 @@
 		2605CB9E2393B8E60064519C /* DecorationAndShadow */ = {
 			isa = PBXGroup;
 			children = (
+				26A6091923949D6200F35986 /* Model */,
+				2605CBCA2393F92C0064519C /* src */,
+				2605CBC32393F2D10064519C /* Base */,
+				2605CBB22393EF5B0064519C /* Cells */,
+				2605CBB02393EED90064519C /* DecorationController.swift */,
 				2605CBA92393B9A50064519C /* Util */,
 				2605CBA22393B9710064519C /* Layout */,
 				2605CB9F2393B9710064519C /* Shadow */,
@@ -125,8 +148,36 @@
 				2605CBAA2393B9D70064519C /* UV.swift */,
 				2605CBAC2393BA670064519C /* Reuse.swift */,
 				2605CBAE2393BAB50064519C /* Layout.swift */,
+				2605CBC82393F3F50064519C /* ViewAdd.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		2605CBB22393EF5B0064519C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2605CBB32393EF5B0064519C /* ScoreReusableHeader.swift */,
+				2605CBB52393EF5B0064519C /* ScoreReusableHeader.xib */,
+				2605CBB82393EF5B0064519C /* PracticeRecentlyItem.swift */,
+				2605CBB92393EF5B0064519C /* PracticeRecentlyItem.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2605CBC32393F2D10064519C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2605CBC42393F2D10064519C /* TabController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2605CBCA2393F92C0064519C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2605CBCB2393F92C0064519C /* one.plist */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		265DAF4523119CC200D6EEE1 /* VerticalTabBar */ = {
@@ -137,6 +188,14 @@
 				26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */,
 			);
 			path = VerticalTabBar;
+			sourceTree = "<group>";
+		};
+		26A6091923949D6200F35986 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26A6091A23949DC800F35986 /* Practice.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		26EF83DB231245750058BF68 /* example */ = {
@@ -305,8 +364,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F167AD231067B200437776 /* LaunchScreen.storyboard in Resources */,
+				2605CBCC2393F92C0064519C /* one.plist in Resources */,
 				26F167AA231067B200437776 /* Assets.xcassets in Resources */,
 				26F167A8231067B000437776 /* Main.storyboard in Resources */,
+				2605CBBD2393EF5B0064519C /* ScoreReusableHeader.xib in Resources */,
+				2605CBC12393EF5B0064519C /* PracticeRecentlyItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,13 +394,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2605CBA72393B9710064519C /* DecorationLayoutAttributes.swift in Sources */,
+				2605CBBB2393EF5B0064519C /* ScoreReusableHeader.swift in Sources */,
 				26EF83DD231245880058BF68 /* ViewController.swift in Sources */,
 				2605CBAD2393BA670064519C /* Reuse.swift in Sources */,
+				2605CBC02393EF5B0064519C /* PracticeRecentlyItem.swift in Sources */,
 				2605CBAB2393B9D70064519C /* UV.swift in Sources */,
 				265DAF4823119CE700D6EEE1 /* TabBarCell.swift in Sources */,
+				2605CBB12393EED90064519C /* DecorationController.swift in Sources */,
 				2605CBA82393B9710064519C /* DecorationFlow.swift in Sources */,
+				26A6091B23949DC800F35986 /* Practice.swift in Sources */,
 				2605CBA52393B9710064519C /* RecentScoreBg.swift in Sources */,
+				2605CBC62393F2D10064519C /* TabController.swift in Sources */,
 				2605CBAF2393BAB50064519C /* Layout.swift in Sources */,
+				2605CBC92393F3F50064519C /* ViewAdd.swift in Sources */,
 				26EF83D8231207B40058BF68 /* VerticalTabTable.swift in Sources */,
 				26F167A3231067B000437776 /* AppDelegate.swift in Sources */,
 				26EF83DA23123AA40058BF68 /* VerticalTabBarController.swift in Sources */,
