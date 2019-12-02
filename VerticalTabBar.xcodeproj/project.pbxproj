@@ -23,6 +23,8 @@
 		2605CBCC2393F92C0064519C /* one.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2605CBCB2393F92C0064519C /* one.plist */; };
 		265DAF4823119CE700D6EEE1 /* TabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265DAF4623119CE700D6EEE1 /* TabBarCell.swift */; };
 		26A6091B23949DC800F35986 /* Practice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A6091A23949DC800F35986 /* Practice.swift */; };
+		26A6091D2394B07A00F35986 /* DecorationFlowSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A6091C2394B07A00F35986 /* DecorationFlowSecond.swift */; };
+		26A609202394B3B000F35986 /* DebugLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A6091F2394B3B000F35986 /* DebugLayer.swift */; };
 		26EF83D8231207B40058BF68 /* VerticalTabTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D7231207B40058BF68 /* VerticalTabTable.swift */; };
 		26EF83DA23123AA40058BF68 /* VerticalTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */; };
 		26EF83DD231245880058BF68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EF83DC231245880058BF68 /* ViewController.swift */; };
@@ -68,6 +70,8 @@
 		2605CBCB2393F92C0064519C /* one.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = one.plist; sourceTree = "<group>"; };
 		265DAF4623119CE700D6EEE1 /* TabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCell.swift; sourceTree = "<group>"; };
 		26A6091A23949DC800F35986 /* Practice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice.swift; sourceTree = "<group>"; };
+		26A6091C2394B07A00F35986 /* DecorationFlowSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecorationFlowSecond.swift; sourceTree = "<group>"; };
+		26A6091F2394B3B000F35986 /* DebugLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugLayer.swift; sourceTree = "<group>"; };
 		26EF83D7231207B40058BF68 /* VerticalTabTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabTable.swift; sourceTree = "<group>"; };
 		26EF83D923123AA40058BF68 /* VerticalTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabBarController.swift; sourceTree = "<group>"; };
 		26EF83DC231245880058BF68 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,14 +117,15 @@
 		2605CB9E2393B8E60064519C /* DecorationAndShadow */ = {
 			isa = PBXGroup;
 			children = (
-				26A6091923949D6200F35986 /* Model */,
-				2605CBCA2393F92C0064519C /* src */,
 				2605CBC32393F2D10064519C /* Base */,
 				2605CBB22393EF5B0064519C /* Cells */,
+				26A6091E2394B3B000F35986 /* Debug */,
 				2605CBB02393EED90064519C /* DecorationController.swift */,
-				2605CBA92393B9A50064519C /* Util */,
 				2605CBA22393B9710064519C /* Layout */,
+				26A6091923949D6200F35986 /* Model */,
 				2605CB9F2393B9710064519C /* Shadow */,
+				2605CBCA2393F92C0064519C /* src */,
+				2605CBA92393B9A50064519C /* Util */,
 			);
 			path = DecorationAndShadow;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			children = (
 				2605CBA32393B9710064519C /* DecorationLayoutAttributes.swift */,
 				2605CBA42393B9710064519C /* DecorationFlow.swift */,
+				26A6091C2394B07A00F35986 /* DecorationFlowSecond.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -196,6 +202,14 @@
 				26A6091A23949DC800F35986 /* Practice.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		26A6091E2394B3B000F35986 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				26A6091F2394B3B000F35986 /* DebugLayer.swift */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 		26EF83DB231245750058BF68 /* example */ = {
@@ -396,8 +410,10 @@
 				2605CBA72393B9710064519C /* DecorationLayoutAttributes.swift in Sources */,
 				2605CBBB2393EF5B0064519C /* ScoreReusableHeader.swift in Sources */,
 				26EF83DD231245880058BF68 /* ViewController.swift in Sources */,
+				26A609202394B3B000F35986 /* DebugLayer.swift in Sources */,
 				2605CBAD2393BA670064519C /* Reuse.swift in Sources */,
 				2605CBC02393EF5B0064519C /* PracticeRecentlyItem.swift in Sources */,
+				26A6091D2394B07A00F35986 /* DecorationFlowSecond.swift in Sources */,
 				2605CBAB2393B9D70064519C /* UV.swift in Sources */,
 				265DAF4823119CE700D6EEE1 /* TabBarCell.swift in Sources */,
 				2605CBB12393EED90064519C /* DecorationController.swift in Sources */,

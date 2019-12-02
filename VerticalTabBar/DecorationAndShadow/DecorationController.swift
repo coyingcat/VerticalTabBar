@@ -42,10 +42,17 @@ class DecorationController: TabController {
     
     var trailing_hide: NSLayoutConstraint!
     
+    var secondInfo:(layout: UICollectionViewFlowLayout, tip: String) = (UICollectionViewFlowLayout(), "阴影效果"){
+        didSet{
+            contentCollcection.setCollectionViewLayout(secondInfo.layout, animated: false)
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "阴影效果"
+        title = secondInfo.tip
         navigationController?.navigationBar.prefersLargeTitles = true
         
         contentCollcection.translatesAutoresizingMaskIntoConstraints = false
@@ -115,7 +122,7 @@ extension DecorationController: UICollectionViewDataSource{
     
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let count = 6
+        let count = 5
             // debug
          //   count = 3
             
@@ -126,6 +133,7 @@ extension DecorationController: UICollectionViewDataSource{
         let cell = collectionView.dequeue(cell: PracticeRecentlyItem.self, ip: indexPath)
         let record = Info.data[indexPath.item]
         cell.config(record.scores_name, description: record.desp)
+        cell.layer.debug()
         return cell
     }
     

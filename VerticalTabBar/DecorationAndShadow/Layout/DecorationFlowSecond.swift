@@ -1,25 +1,15 @@
 //
-//  DecorationFlow.swift
-//  musicSheet
+//  DecorationFlowSecond.swift
+//  VerticalTabBar
 //
-//  Created by Jz D on 2019/11/29.
+//  Created by Jz D on 2019/12/2.
 //  Copyright © 2019 Jz D. All rights reserved.
 //
 
 import UIKit
 
 
-struct FrontPageFrame {
-    static let lhs: CGFloat = 20
-    static let rhs: CGFloat = 20
-    static let headerH: CGFloat = 54
-    static let sectionHeaderH: CGFloat = 72
-}
-
-
-
-
-class DecorationFlow: UICollectionViewFlowLayout {
+class DecorationFlowSecond: UICollectionViewFlowLayout {
     
     override func prepare() {
         super.prepare()

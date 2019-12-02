@@ -10,8 +10,8 @@ import UIKit
 
 struct ShadowFrame {
     static let corn: CGFloat = 4
-    static let rhs: CGFloat = 1
-    static let bottom: CGFloat = 2
+    static let rhs: CGFloat = 3
+    static let bottom: CGFloat = 5
 }
 
 
@@ -36,7 +36,7 @@ class RecentScoreBg: UICollectionReusableView {
         let frame = bounds.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: ShadowFrame.bottom, right: ShadowFrame.rhs))
         let rect = UIBezierPath(roundedRect: frame, cornerRadius: ShadowFrame.corn)
         let shadow = UIColor.shadowScore
-        context.setShadow(offset: CGSize(width: ShadowFrame.rhs, height: ShadowFrame.bottom), blur: 4, color: shadow.cgColor)
+        context.setShadow(offset: CGSize(width: ShadowFrame.rhs, height: ShadowFrame.bottom), blur: 12, color: shadow.cgColor)
         UIColor.white.setFill()
         rect.fill()
     }
