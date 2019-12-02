@@ -11,7 +11,7 @@ import UIKit
 
 struct FrontPageFrame {
     static let lhs: CGFloat = 20
-    static let rhs: CGFloat = 24
+    static let rhs: CGFloat = 20
     static let headerH: CGFloat = 54
     static let sectionHeaderH: CGFloat = 72
 }
@@ -30,24 +30,20 @@ class DecorationFlow: UICollectionViewFlowLayout {
         return true
     }
     
-    // 同时不影响我们正常的 UICollectionViewDelegateFlowLayout 代理，设置布局信息
     override func layoutAttributesForDecorationView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         guard indexPath.section == 0, let collection = collectionView, elementKind == RecentScoreBg.id else{
             return nil
         }
         let attributes = DecorationLayoutAttributes(forDecorationViewOfKind: RecentScoreBg.id, with: indexPath)
         let totalWid = UI.width - VerticalTabBarInfo.tabBarWidth
-        let width = totalWid - FrontPageFrame.lhs - FrontPageFrame.rhs + ShadowFrame.cornerTrailing
+        let width = totalWid - FrontPageFrame.lhs - FrontPageFrame.rhs + ShadowFrame.rhs
         let floor = ceil(Double(collection.numberOfItems(inSection: 0))/2.0)
-        let height = CGFloat(floor) * FrontPageFrame.sectionHeaderH + ShadowFrame.shadowOffset
+        let height = CGFloat(floor) * FrontPageFrame.sectionHeaderH + ShadowFrame.bottom
         attributes.frame = CGRect(x: FrontPageFrame.lhs, y: FrontPageFrame.headerH, width: width, height: height)
         attributes.zIndex -= 1
         return attributes
         
     }
-    // 涂色大法好，解决涂色部分
-    
-    
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         var array = super.layoutAttributesForElements(in: rect)

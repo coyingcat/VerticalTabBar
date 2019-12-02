@@ -45,6 +45,8 @@ class DecorationController: TabController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "阴影效果"
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         contentCollcection.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(contentCollcection)
