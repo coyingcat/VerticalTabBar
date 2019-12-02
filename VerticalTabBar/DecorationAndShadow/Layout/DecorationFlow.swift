@@ -24,7 +24,7 @@ class DecorationFlow<T: UICollectionReusableView>: UICollectionViewFlowLayout {
     
     override func prepare() {
         super.prepare()
-        sectionInset = UIEdgeInsets(top: 0, left: MyLibCtrlLayout.x, bottom: 16, right: MyLibCtrlLayout.trailing)
+        sectionInset = UIEdgeInsets(top: 0, left: MusicLayout.x, bottom: 16, right: MusicLayout.trailing)
         minimumLineSpacing = 0
         minimumInteritemSpacing = 0
         register(T.self, forDecorationViewOfKind: T.id)

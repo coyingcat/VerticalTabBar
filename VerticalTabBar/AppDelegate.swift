@@ -36,19 +36,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     decorate.secondInfo = (DecorationFlow<ShadowBgCg>(), title)
                 case 2:
                     title = "阴影效果二"
-                    decorate.secondInfo = (DecorationFlowSecond(), title)
+                    decorate.secondInfo = (DecorationFlowSecond<ShadowBgSecond>(), title)
                 case 3:
-                    title = "图片"
-                    decorate.secondInfo = (DecorationFlowSecond(), title)
+                    title = "StackOverFlow"
+                    decorate.secondInfo = (DecorationFlowSecond<ShadowBgStackOver>(), title)
                 default:
                     title = "tbd"
                 }
                 let ctrl = UINavigationController(rootViewController: decorate)
-                ctrl.view.backgroundColor = UIColor.white
                 ctrl.tabBarItem = UITabBarItem(title: title, image: UIImage(named:"magnifying-glass"), tag: $0 + 1)
                 return ctrl
             }
-            return shadows + [controller]
+            let imgCtrl = UINavigationController(rootViewController: DecorationImgController())
+            imgCtrl.tabBarItem = UITabBarItem(title: "图片", image: UIImage(named:"magnifying-glass"), tag: 9)
+            return shadows + [imgCtrl, controller]
         }()
         
         window = UIWindow(frame: UIScreen.main.bounds)

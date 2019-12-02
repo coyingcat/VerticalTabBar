@@ -62,7 +62,7 @@
                                 <state key="normal" image="score_star"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Lvc-JO-KZw" firstAttribute="leading" secondItem="q3x-Ka-29m" secondAttribute="trailing" constant="20" id="AOg-8z-lq1"/>
                             <constraint firstItem="q3x-Ka-29m" firstAttribute="leading" secondItem="AI1-v6-fit" secondAttribute="leading" constant="24" id="GeN-Gr-1BO"/>

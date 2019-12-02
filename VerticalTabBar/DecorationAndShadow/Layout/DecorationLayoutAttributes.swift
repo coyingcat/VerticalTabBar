@@ -11,5 +11,7 @@ import UIKit
 class DecorationLayoutAttributes: UICollectionViewLayoutAttributes {
 
     var isOdd = false
+    var imgName: String?
+    
     
 }

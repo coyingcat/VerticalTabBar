@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ShadowBgSecond: UICollectionReusableView {
+class ShadowBgStackOver: UICollectionReusableView {
     
     var isOdd: Bool = false{
         didSet{
@@ -22,7 +22,9 @@ class ShadowBgSecond: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.clear
+       //  backgroundColor = UIColor.red
+        // backgroundColor = UIColor.clear
+        backgroundColor = UIColor.white
     }
     
     
@@ -33,31 +35,37 @@ class ShadowBgSecond: UICollectionReusableView {
     
     override func draw(_ rect: CGRect) {
         guard let context = UIGraphicsGetCurrentContext() else { return  }
-        
+     
         let frame = bounds.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: ShadowFrame.bottom, right: ShadowFrame.rhs))
-        let rect: UIBezierPath
+        var pathes = [UIBezierPath]()
+        
+        
         if isOdd{
             let upFrame = frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: MusicLayout.itemHeight, right: 0))
-            rect = UIBezierPath(roundedRect: upFrame, byRoundingCorners: [.topLeft, .topRight, .bottomRight], cornerRadii: CGSize(width: ShadowFrame.corn, height: ShadowFrame.corn))
+            let rectUp = UIBezierPath(roundedRect: upFrame, byRoundingCorners: [.topLeft, .topRight, .bottomRight], cornerRadii: CGSize(width: ShadowFrame.corn, height: ShadowFrame.corn))
             let downFrame = CGRect(origin: CGPoint(x: upFrame.minX, y: upFrame.maxY), size: CGSize(width: MusicLayout.doubleItemWidth * 0.5, height: MusicLayout.itemHeight))
-            rect.append(UIBezierPath(roundedRect: downFrame, byRoundingCorners: [.bottomLeft, .bottomRight], cornerRadii: CGSize(width: ShadowFrame.corn, height: ShadowFrame.corn)))
+            let rectDown = UIBezierPath(roundedRect: downFrame, byRoundingCorners: [.bottomLeft, .bottomRight], cornerRadii: CGSize(width: ShadowFrame.corn, height: ShadowFrame.corn))
             let midArc = UIBezierPath()
             let midP = CGPoint(x: upFrame.midX, y: upFrame.maxY)
             midArc.move(to: midP)
             midArc.addLine(to: midP.v(ShadowFrame.corn))
             midArc.addArc(withCenter: midP.offset(ShadowFrame.corn, offsetV: ShadowFrame.corn), radius: ShadowFrame.corn, startAngle: CGFloat.pi , endAngle: CGFloat.pi * 1.5, clockwise: true)
             midArc.close()
-            rect.append(midArc)
+            pathes.append(contentsOf: [rectUp, rectDown, midArc])
         }
         else{
-            rect = UIBezierPath(roundedRect: frame, cornerRadius: ShadowFrame.corn)
+            let rect = UIBezierPath(roundedRect: frame, cornerRadius: ShadowFrame.corn)
+            pathes.append(rect)
         }
         let shadow = UIColor.shadowScore
         context.setShadow(offset: CGSize(width: ShadowFrame.rhs, height: ShadowFrame.bottom), blur: 12, color: shadow.cgColor)
+        context.beginTransparencyLayer(auxiliaryInfo: nil)
         UIColor.white.setFill()
-        rect.fill()
+        pathes.forEach { $0.fill() }
+        context.endTransparencyLayer()
     }
     
+
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         if let attribute = layoutAttributes as? DecorationLayoutAttributes{
             isOdd = attribute.isOdd

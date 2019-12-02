@@ -9,22 +9,14 @@
 import UIKit
 
 
-struct MusicLayout {
-    static let x: CGFloat = 20
-    static let trailing: CGFloat = 20
-    static let headerH: CGFloat = 54
-    static let itemHeight: CGFloat = 72
+
+class DecorationImgController: TabController {
     
     
-    static let doubleItemWidth = UI.width - VerticalTabBarInfo.tabBarWidth - FrontPageFrame.lhs - FrontPageFrame.rhs
-}
-
-
-
-class DecorationController: TabController{
+    
+    var layout = DecorationImgFlow()
     
     lazy var contentCollcection: UICollectionView = {
-        let layout = DecorationFlow<ShadowBg>()
         let collection = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collection.backgroundColor = UIColor(rgb: 0xF9F8F8)
         collection.delegate = self
@@ -41,19 +33,12 @@ class DecorationController: TabController{
     
     var trailing_hide: NSLayoutConstraint!
     
-    var secondInfo:(layout: UICollectionViewFlowLayout, tip: String) = (UICollectionViewFlowLayout(), "阴影效果"){
-        didSet{
-            contentCollcection.setCollectionViewLayout(secondInfo.layout, animated: false)
-        }
-    }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = secondInfo.tip
+        title = "图片"
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+        layout.imgName = "bg"
         contentCollcection.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(contentCollcection)
         let top_contentCollcection = contentCollcection.topAnchor.constraint(equalTo: view.topAnchor)
@@ -70,7 +55,7 @@ class DecorationController: TabController{
 
 
 
-extension DecorationController: UICollectionViewDelegateFlowLayout{
+extension DecorationImgController: UICollectionViewDelegateFlowLayout{
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -112,7 +97,7 @@ extension DecorationController: UICollectionViewDelegateFlowLayout{
 
 
 
-extension DecorationController: UICollectionViewDataSource{
+extension DecorationImgController: UICollectionViewDataSource{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
