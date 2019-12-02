@@ -4,6 +4,15 @@ futuresimple/FSVerticalTabBarController translated to Swift5
 
 
 
+
+
+<hr>
+
+博客 @juejin [怎样造一个垂直的 TarBarController? VerticalTabBar，一般用于 iPad](https://juejin.im/post/5d629fc9f265da03a9504229)
+
+
+<hr>
+
 I translated futuresimple/FSVerticalTabBarController translated to Swift5, and wrote a blog in juejin
 
 
