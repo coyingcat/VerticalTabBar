@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let title = "点不了"
             controller.tabBarItem = UITabBarItem(title: title, image: UIImage(named:"magnifying-glass"), tag: 0)
             controller.view.backgroundColor = UIColor.blue
-            let shadows: [UIViewController] = Array(0...3).map{
+            let shadows: [UIViewController] = Array(0...2).map{
                 let decorate = DecorationController()
                 let title: String
                 switch $0{
@@ -37,9 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 case 2:
                     title = "阴影效果二"
                     decorate.secondInfo = (DecorationFlowSecond<ShadowBgSecond>(), title)
-                case 3:
-                    title = "StackOverFlow"
-                    decorate.secondInfo = (DecorationFlowSecond<ShadowBgStackOver>(), title)
                 default:
                     title = "tbd"
                 }
