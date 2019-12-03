@@ -25,9 +25,7 @@ class ShadowBg: UICollectionReusableView {
         layer.shadowOffset = CGSize(width: ShadowFrame.rhs, height: ShadowFrame.bottom)
     }
     
-    
     required init?(coder: NSCoder) {
         fatalError("没实现")
     }
-    
 }

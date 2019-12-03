@@ -12,8 +12,6 @@ import UIKit
 
 class DecorationImgController: TabController {
     
-    
-    
     var layout = DecorationImgFlow()
     
     lazy var contentCollcection: UICollectionView = {

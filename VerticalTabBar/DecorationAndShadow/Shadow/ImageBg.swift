@@ -45,7 +45,6 @@ class ImageBg: UICollectionReusableView {
                 bg.image = UIImage(named: name)
             }
         }
-        
     }
     
 }

@@ -46,7 +46,6 @@ class DecorationFlow<T: UICollectionReusableView>: UICollectionViewFlowLayout {
         attributes.frame = CGRect(x: FrontPageFrame.lhs, y: FrontPageFrame.headerH, width: width, height: height)
         attributes.zIndex -= 1
         return attributes
-        
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

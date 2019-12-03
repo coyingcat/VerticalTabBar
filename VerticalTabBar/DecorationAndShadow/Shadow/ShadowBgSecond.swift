@@ -62,6 +62,5 @@ class ShadowBgSecond: UICollectionReusableView {
         if let attribute = layoutAttributes as? DecorationLayoutAttributes{
             isOdd = attribute.isOdd
         }
-        
     }
 }
