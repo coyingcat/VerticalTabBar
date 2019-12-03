@@ -2,8 +2,10 @@
 futuresimple/FSVerticalTabBarController translated to Swift5
 
 
+![](https://github.com/coyingcat/VerticalTabBar/raw/master/src/one.png)
 
 
+Custom CollectionView Decoration Layout and shadow
 
 
 <hr>
